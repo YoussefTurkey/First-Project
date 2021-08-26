@@ -7,3 +7,25 @@
 .container {
   border-radius: 5px;
 }
+.calc {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.calc h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+.calc > p {
+  text-align: center;
+  color: rgb(63, 63, 63);
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+.t {
+  color: #777;
+  transition: all 0.3s ease;
+}
+.t:hover {
+  color: #198754;
+}
