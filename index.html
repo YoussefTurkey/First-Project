@@ -6,34 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/Nouvil.css">
-    <title>EL-TURKEY</title>
+    <title>GYM-Project</title>
+    <link rel="icon" href="images/fitness-or-gym-icon-vector.png">
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="home">
         <div class="container-fluid">
-          <a class="navbar-brand text-success" href="#">EL-TURKEY</a>
+          <a class="navbar-brand text-success" href="#home">GYM-Project</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link" href="#weight">Weight Calc</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Contact
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Linkedin</a></li>
-                  <li><a class="dropdown-item" href="#">Github</a></li>
+                  <li><a class="dropdown-item" href="#contact">Linkedin</a></li>
+                  <li><a class="dropdown-item" href="#contact">Github</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Behance</a></li>
+                  <li><a class="dropdown-item" href="#contact">Behance</a></li>
                 </ul>
               </li>
             </ul>
@@ -46,13 +50,11 @@
           <div class="row">
               <div class="col-lg-8">
 
-                <h1 class="h">TURKEY STORE</h1>
-                <span class="s">This is a simple hero unit, a simple jumbotron-style component calling extra
-                    attention to featured content or information.
+                <h1 class="h">GYM-Project</h1>
+                <span class="s">This is a small tutorial for semi project by using HTML5, CSS3 and Bootstrap.
                 </span>
                 <hr>
-                <p>it used utility classes for typography and spacing to space content out within the larger
-                    container.
+                <p>This website was built to calculate the calories that what our bodies need.
                 </p>
                 <form class="d-flex">
                     <input class="form-control me-2 w-75" type="search" placeholder="Search" aria-label="Search">
@@ -65,13 +67,14 @@
 
                 <div class="list-group">
                     <a href="#skills" class="list-group-item list-group-item-action active bg-success dropdown-toggle" data-bs-toggle="collapse" aria-current="true">
-                      My Front-End Skills
+                      The languages were used: 
                     </a>
-                    <div class="collapse show" id="skills">
+                    <div class="collapse" id="skills">
                         <a href="#" class="list-group-item list-group-item-action">HTML5</a>
                         <a href="#" class="list-group-item list-group-item-action">CSS3</a>
-                        <a href="#" class="list-group-item list-group-item-action">Javascript</a>
                         <a href="#" class="list-group-item list-group-item-action">Bootstrap</a>
+                        <a href="#" class="list-group-item list-group-item-action">PHP</a>
+                        <a href="#" class="list-group-item list-group-item-action">MySQL</a>
                     </div>
                   </div>
 
@@ -79,83 +82,143 @@
           </div>
     </div>
       
+    <!-- Start Wighting -->
+      <div class="container calc" id="weight">
+        <h1 class="text-success">Weight Calculating</h1>
+        <p class="text-secondary">For calculating your current weight</p>
+        <form class="row g-3 needs-validation container" novalidate>
+            <div class="col-md-3">
+              <label for="validationCustom01" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="validationCustom01" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom02" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="validationCustom02" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="validationCustom03" class="form-label">Email</label>
+                <div class="input-group">
+                  <input type="email" class="form-control" id="validationCustom03" required>
+                    <div class="input-group-prepent">
+                        <span class="input-group-text">@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-3">
+              <div class="d">
+                <label for="validationCustom04" class="form-label">Age</label>
+                <input class="form-control" id="validationCustom04" type="number">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="d">
+                <label for="validationCustom05" class="form-label">Sex</label>
+                <select class="form-control" id="validationCustom05">
+                  <optgroup>
+                    <caption label="Choose..."></caption>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </optgroup>
+                </select>
+              <p class="text-secondary">Choose your sex</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom06" class="form-label">Weight</label>
+              <input type="number" class="form-control" id="validationCustom06" required>
+              <p class="text-secondary">by kelogram</p>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom07" class="form-label">Height</label>
+              <input type="number" class="form-control" id="validationCustom07" required>
+              <p class="text-secondary">by centimeter</p>
+            </div>
+            <div class="col-md-6">
+              <div class="d">
+                <label for="validationCustom08" class="form-label">Activity Rate</label>
+                <select class="form-control" id="validationCustom08">
+                  <optgroup>
+                    <caption label="Choose..."></caption>
+                    <option value="low">Lower ( practice 1-3 days in a week )</option>
+                    <option value="medium" selected>Medium ( practice 3-5 days in a week )</option>
+                    <option value="high">Hight ( practice 5-7 days in a week )</option>
+                  </optgroup>
+                </select>
+              <p class="text-secondary">Choose your activtiy training rate</p>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" style="cursor: pointer;" required>
+                <label class="form-check-label" for="invalidCheck" style="cursor: pointer;">
+                  Save my status
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-success" type="submit">Calculate</button>
+              <button class="btn btn-outline-success m-2" type="reset">Resest</button>
+            </div>
+          </form>
+      </div>
+    <!-- End Wighting -->
+
     <!-- Cards -->
-    <div class="container">
+    <div class="container" id="about">
         <div class="text-center m-5 text-dark">
-            <h3>Products</h3>
-            <p class="text-secondary">Our Products are available now</p>
+            <h3 class="text-success" style="text-transform:uppercase">Team Work</h3>
+            <p class="text-secondary">Our Web Developers</p>
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-6 col-12 mt-4">
                 <div class="card">
-                    <img src="images/icon.jpg" class="card-img-top" alt="id">
-                    <div class="card-body">
-                      <h5 class="card-title">Identity Card</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-success">See More</a>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 mt-4">
-                <div class="card">
-                    <img src="images/First.jpg" class="card-img-top" alt="id">
-                    <div class="card-body">
-                      <h5 class="card-title">Designer & Developer</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-success">See More</a>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 mt-4">
-                <div class="card">
-                    <img src="images/second.jpg" class="card-img-top" alt="id">
-                    <div class="card-body">
-                      <h5 class="card-title">Programming lang..</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-success">See More</a>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 mt-4">
-                <div class="card">
-                    <img src="images/third.jpg" class="card-img-top" alt="id">
-                    <div class="card-body">
-                      <h5 class="card-title">Graphic Tools</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-success">See More</a>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 mt-4">
-                <div class="card">
-                    <img src="images/forth.jpg" class="card-img-top" alt="id">
-                    <div class="card-body">
-                      <h5 class="card-title">Civil Works</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-success">See More</a>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 mt-4">
-                <div class="card">
-                    <img src="images/fifth.jpg" class="card-img-top" alt="id">
+                    <img src="images/1.jpg" class="card-img-top" alt="id">
                     <div class="card-body">
                       <h5 class="card-title">Youssef Turkey</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-success">See More</a>
+                      <p class="card-text">Front-End Web Developer.</p>
+                      <a href="#contact" class="btn btn-outline-success">See Portfolio</a>
                     </div>
                   </div>
             </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4">
+                <div class="card">
+                    <img src="images/2.jpg" class="card-img-top" alt="id">
+                    <div class="card-body">
+                      <h5 class="card-title">Mohamed Amr</h5>
+                      <p class="card-text">Full-Stack Web Developer.</p>
+                      <a href="#contact" class="btn btn-outline-success">See Portfolio</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4">
+                <div class="card">
+                    <img src="images/4.jpg" class="card-img-top" alt="id">
+                    <div class="card-body">
+                      <h5 class="card-title">Mahmoud Adel</h5>
+                      <p class="card-text">Back-End Web Developer.</p>
+                      <a href="#contact" class="btn btn-outline-success">See Portfolio</a>
+                    </div>
+                  </div>
+            </div>
+
         </div>
     </div>
 
     <!-- Carousel -->
-    <div class="container">
+    <!-- <div class="container">
         <div class="text-center m-5 text-dark">
             <h3>Slide Show</h3>
             <p class="text-secondary">كل ماهو تركي جميل</p>
@@ -211,12 +274,12 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-    </div>
+    </div> -->
 
     <!-- Contact -->
-    <div class="container">
+    <div class="container" id="contact">
         <div class="text-center m-5 text-dark">
-            <h3>Contact</h3>
+            <h3 class="text-success" style="text-transform:uppercase">Contact</h3>
             <p class="text-secondary">You Can Contact Us</p>
         </div>
         <div class="card mb-3">
@@ -235,8 +298,9 @@
                       <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
                     <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********">
+                      <label for="exampleInputPassword1" class="form-label">Message</label>
+                      <textarea class="form-control" id="exampleInputPassword1" cols="5" rows="4"></textarea>
+                      <p class="text-secondary">Leave a message</p>
                     </div>
                     <div class="mb-3 form-check">
                       <input type="checkbox" class="form-check-input" id="exampleCheck1" style="cursor: pointer;">
@@ -249,7 +313,7 @@
               </div>
 
               <div class="col">
-                <img src="images/icon.jpg" class="img-fluid rounded-start" alt="Turkey">
+                <img src="images/5.jpg" class="img-fluid rounded-start" alt="Turkey">
               </div>
             </div>
           </div>
@@ -300,8 +364,8 @@
             <!-- Grid column -->
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <!-- Content -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i>EL-TURKEY
+                <h6 class="text-uppercase fw-bold mb-4 text-success">
+                <i class="fas fa-gem me-3"></i>GYM-Project
                 </h6>
                 <p>
                 Here you can use rows and columns to organize your footer content. Lorem ipsum
@@ -313,20 +377,17 @@
             <!-- Grid column -->
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                Products
+                <h6 class="text-uppercase fw-bold mb-4 text-success">
+                Developers
                 </h6>
                 <p>
-                <a href="#!" class="text-reset">Identity Card</a>
+                <a href="#about" class="text-reset">Youssef Turkey</a>
                 </p>
                 <p>
-                <a href="#!" class="text-reset">Designer & Developer</a>
+                <a href="#about" class="text-reset">Mahmoud Adel</a>
                 </p>
                 <p>
-                <a href="#!" class="text-reset">Programming lang..</a>
-                </p>
-                <p>
-                <a href="#!" class="text-reset">Graphic Tools</a>
+                <a href="#about" class="text-reset">Mohamed Amr</a>
                 </p>
             </div>
             <!-- Grid column -->
@@ -334,7 +395,7 @@
             <!-- Grid column -->
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
+                <h6 class="text-uppercase fw-bold mb-4 text-success">
                 Contact links
                 </h6>
                 <p>
@@ -355,13 +416,13 @@
             <!-- Grid column -->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
+                <h6 class="text-uppercase fw-bold mb-4 text-success">
                 Contact
                 </h6>
                 <p><i class="fas fa-home me-3"></i> Alexandria, NY 10012, Egypt</p>
                 <p>
                 <i class="fas fa-envelope me-3"></i>
-                youssef.turkey11@gmail.com
+                sci.Student2021@alex.edu.org
                 </p>
                 <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
                 <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
@@ -376,7 +437,7 @@
         <!-- Copyright -->
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
         © 2021 Copyright
-        <a class="text-reset fw-bold" href="https://EL-TURKEY.com/">EL-TURKEY STORE.com</a>
+        <a class="t fw-bold" href="#home">GYM-Project.com</a>
         </div>
         <!-- Copyright -->
     </footer>
