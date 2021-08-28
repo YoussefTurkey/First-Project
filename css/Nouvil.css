@@ -29,3 +29,75 @@
 .t:hover {
   color: #198754;
 }
+.v {
+  margin-right: 10px;
+}
+@media (max-width: 767px) {
+  .v,
+  .c {
+    width: 40%;
+  }
+}
+.x {
+  margin-top: 10%;
+}
+@media (max-width: 767px) {
+  .x {
+    margin-top: 25%;
+  }
+}
+.reg {
+  float: right;
+  transition: all 0.3s ease;
+  color: black;
+  text-decoration: none;
+}
+.reg:hover {
+  text-decoration: underline;
+  color: #198754;
+}
+@media (max-width: 767px) {
+  .reg {
+    font-size: 12px;
+    margin-top: 7px;
+    margin: 20px 32% 5px 0px;
+  }
+  .log {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+.b {
+  margin-top: 5%;
+}
+@media (max-width: 767px) {
+  .b {
+    margin-top: 10%;
+  }
+}
+.s {
+  transition: all 0.3s ease;
+}
+.s:hover {
+  text-decoration: underline;
+}
+.j {
+  float: right;
+  color: black;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.j:hover {
+  text-decoration: underline;
+  color: #198754;
+}
+@media (max-width: 767px) {
+  .j {
+    text-align: center;
+    margin: 10px 15% 5px 0px;
+  }
+  .sign {
+    width: 100%;
+    margin-top: 25px;
+  }
+}
