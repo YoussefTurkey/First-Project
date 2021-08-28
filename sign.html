@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/Nouvil.css">
+    <title>GYM-Sign</title>
+    <link rel="icon" href="images/fitness-or-gym-icon-vector.png">
+</head>
+<body>
+    <div class="container b w-75">
+        <h1 class="text-success text-center">GYM-Sign</h1>
+        <p class="text-secondary text-center mb-5">Be one of our family</p>
+        <form class="row g-3 needs-validation container" novalidate>
+            <div class="col-md-6">
+              <label for="fname" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="fname" required>
+            </div>
+            <div class="col-md-6">
+              <label for="lname" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lname" required>
+            </div>
+            <div class="col-md-12">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="example@gmail.com" required>
+            </div>
+            <div class="col-md-6">
+                <label for="pass" class="form-label">Password</label>
+                <input type="password" class="form-control" id="pass" required>
+                <p class="text-secondary">try to make it special</p>
+            </div>
+            <div class="col-md-6">
+                <label for="re-pass" class="form-label">Re-Password</label>
+                <input type="password" class="form-control" id="re-pass" required>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" style="cursor: pointer;" required>
+                <label class="form-check-label" for="invalidCheck" style="cursor: pointer;">
+                  By creating an account toy agree to our <span class="text-success s">Terms & Privacy</span>
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <a href="Nouvil.html" role="button" class="btn btn-success sign" type="submit">Sign in</a>
+              <a href="login.html" class="j">I've an account already</a>
+            </div>
+          </form>
+      </div>
+</body>
+</html>
